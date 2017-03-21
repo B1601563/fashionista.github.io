@@ -1,0 +1,204 @@
+header, nav, main, footer, aside { display: block }
+
+* { box-sizing: border-box; }
+
+#wrapper { width: 80%;
+		   margin-left: auto;
+		   margin-right: auto; }
+			
+header { font-size: 35px; 
+		 height: 80px; 
+		 display: flex; }
+
+.floatLeft { float: left; 
+			 margin-top: 0; 
+			 margin-left: 10px; } 
+
+		
+header div { flex: 1; 
+			 order: 1; 
+			 background-color: pink; 
+			 text-align: right; }
+
+.input[type=text] { width: 130px; }
+	
+
+	
+body { background-image: radial-gradient(#FFCCFF, #FFFFFF);
+	   background-repeat: no-repeat; }
+		
+nav ul { list-style-type: none; 
+		text-align: center; }
+			
+nav li { display: inline; }
+
+nav a { text-decoration: none;
+	    padding-left: 15px; 
+	    padding-right: 15px; }
+
+/* unvisited link */
+a:link{ color: #FFFFFF; }
+/*visted link */
+a:visited { color: pink; } /*#9C0F5F, #FC3F8F*/
+/*get focus */
+a:focus { color: #DDA0DD; }
+/*hover over link */
+a:hover { color: hotpink; }
+/*selected link */
+a:active { color: yellow }
+
+nav div { background-color: #2C0F2F; 
+		  font-size: 20px; 
+		  border-radius: 10px; }
+
+h2 { text-align: center;
+	 font-size: 40px; 
+	 margin: 10px; }
+
+@font-face { font-family: brand;
+			 src: url(motionPic.ttf); }
+
+@font-face { font-family: tagline;
+			 src: url(); } 			/*Insert suitable font-face*/
+
+@font-face { font-family: navi;
+			 src: url(belleza.ttf); }
+
+button { border-radius: 0 3px 3px 0; }
+
+.slideshowControl { text-align: right; }
+			
+/* Slideshow container */
+.slideshowContainer { max-width: 1000px;
+					  position: relative;
+					  margin: auto; }
+
+.mySlides { display: none; }
+
+/* Next & previous buttons */
+.prev, .next { cursor: pointer;
+			   position: absolute;
+			   top: 53%;
+			   width: auto;
+			   margin-top: -22px;
+			   padding: 16px;
+			   color: white;
+			   font-weight: bold;
+			   font-size: 18px;
+			   transition: 0.6s ease;
+			   border-radius: 0 3px 3px 0; }
+
+/* Position the "next button" to the right */
+.next { right: 0;
+		border-radius: 3px 0 0 3px; }
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover { background-color: rgba(0,0,0,0.8); }
+
+/* Caption text */
+.text { color: #f2f2f2;
+		background-color: #3D3434;
+	    font-size: 15px;
+	    padding: 8px 12px;
+	    position: absolute;
+	    bottom: 4px;
+	    width: 30%;
+		margin-left: 37%;
+	    text-align: center; 
+		border-radius: 5px; }
+
+/* Number text (1/3 etc) */
+.numbertext { color: #f2f2f2;
+			  background-color: #3D3434;
+			  font-size: 12px;
+			  padding: 8px 12px;
+			  position: absolute;
+			  top: -10; 
+			  border-radius: 0 5px 5px 0; }
+
+/* The dots/bullets/indicators */
+.dot { cursor:pointer;
+	   height: 13px;
+	   width: 13px;
+	   margin: 0 2px;
+	   background-color: #bbb;
+	   border-radius: 50%;
+	   display: inline-block;
+	   transition: background-color 0.6s ease; }
+
+.active, .dot:hover { background-color: #717171; }
+
+/* Fading animation */
+.fade { -webkit-animation-name: fade;
+		-webkit-animation-duration: 2s;
+		animation-name: fade;
+		animation-duration: 2s; }
+
+@-webkit-keyframes fade { from {opacity: .4} 
+						  to {opacity: 1} }
+
+@keyframes fade { from {opacity: .4} 
+				  to {opacity: 1} }
+
+/*#winter {	float:center;
+			margin-left:350px; }*/
+
+			
+footer { font-style:italic;
+		 font-size:.90em;
+		 border-top:thin solid #aeaed4;
+		 padding-top:10px;
+		 text-align:center; 
+		 color: white;
+		 background-color: #2C0F2F; }
+		
+/* Theme color palette #F2671F, #C91B26, #9C0F5F, #60047A, #160A47 */
+/* #decor {	background-image: url(nature.jpg);
+		background-position: 50% 30%;
+		background-size: 80% 60%;
+		background-repeat: no-repeat;
+		background-attachment: scroll;} */
+		
+/* <h2>Newest Fashion Designs</h2>
+		<p>Fashionista is your ultimate guide to a wonderful trendy transformation!
+			We offer a comprehensive range of services:  </p>
+		<ul>
+			<li>Website Design</li>
+			<li>Interactive Animation</li>
+			<li>E-Commerce Solutions</li>  	
+			<li>Usability Studies</li>
+			<li>Search Engine Optimization</li>
+		</ul>
+		<h2>Meeting Your Business Needs</h2>
+		<p>Our expert designers are eager and excited to share with you.
+			Take advantage of the power of a rich and achievable lifestyle!</p>
+*/
+
+/* needs editing */
+@media only screen and (max-width:1024px){
+	body { margin:0; }
+	#wrapper { width:auto; }
+	main { margin-left:0; }
+	nav { float:none; 
+		  width:auto; }
+	nav li { display:inline-block; 
+			 padding:0.5em; }
+	nav ul { text-align:center; }
+	nav a { border-style:none; }
+	h1, h2 { font-size:120%; }
+	p { font-size:90%; }
+
+}
+
+@media only screen and (max-width:768px){
+	h1, h2 { font-size:100%; }
+	
+	p { font-size:90% }
+	
+	figure { display:none; }
+	
+	nav, nav ul, nav li { padding:0; }
+	nav li { display: block; }
+	nav a { display: block; 
+			padding: 0.5em 0;
+			border-bottom: 2px ridge #00005D; }
