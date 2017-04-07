@@ -59,13 +59,13 @@ h5 { margin-left: 20%;
 	 color: pink; }	
 	 
 @font-face { font-family: brand;
-			 src: url(motionPic.ttf); }
+			 src: url(fonts/motionPic.ttf); }
 @font-face { font-family: tagline;
-			 src: url(BN-OldFashion.ttf); } 			
+			 src: url(fonts/BN-OldFashion.ttf); } 			
 @font-face { font-family: navi;
-			 src: url(belleza.ttf); }		 
+			 src: url(fonts/belleza.ttf); }		 
 @font-face { font-family: header;
-			 src: url(blackRose.ttf); }			 
+			 src: url(fonts/blackRose.ttf); }			 
 
 	
 footer { font-family: Arial;
