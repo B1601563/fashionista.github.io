@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Contact | Fashionista</title>
-	<link rel="icon" type = "image/x-icon" href="images/favicon.ico">
-	<link rel="stylesheet" href="fashionista.css">
+	<title>Sign in | Fashionista</title>
+	<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="fashionista.css">
+	<link rel="stylesheet" type="text/css" href="user.css">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -11,6 +12,9 @@
 	<div id="wrapper">
 		<header>
 			<h1 class="floatLeft" style="font-family:brand">Fashionista</h1>
+			<div>
+				<a href="user.html"><img src="images/user.svg" alt="User Account"></a>
+			</div>
 		</header>
 		<nav>
 			<div style="font-family:navi">
@@ -26,41 +30,42 @@
 		</nav>
 		<main>
 			<div style="font-family:tagline">
-				<h2>Log In</h2>
+				<h2>Sign In</h2>
 			</div>
 			
 			<form autocomplete="off" method="post" action="http://webdevbasics.net/scripts/demo.php">
 				<label class="infoLabel">* Required fields</label>
-				<br><br>
-				
-				<label>*First Name: <input type="text" name="firstName" id="firstName" size="40%" 
-				maxlength="20" placeholder="e.g. Adam" required autofocus>
-				</label>
 				
 				<br><br>
-				<label>*Last Name: <input type="text" name="lastName" id="lastName" size="40" 
-				maxlength="20" placeholder="e.g. Levine" required>
-				</label>
-				
-				<br><br>
-				<label>*Email: <input type="email" name="email" id="email" size="40" 
+				<label for="email">*Email:</label>
+				<input type="email" name="email" id="email" size="40" 
 				maxlength="30" placeholder="e.g. adamlevine@gmail.com" required>
-				</label>
-				
-				<br><br>
-				
-				<!-- move this to another form? -->
-				<div id="infoHelp">
-					<label>*Password: 
-						<a>&#9432;<br>
-							<span class="infoLabel">At least 1 uppercase, lowercase, number/special character each</span>
-						</a> 			
-						<input type="password" name="psw" pattern="^((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required>
-					</label>
-				</div>
 				
 				<br>
-				<label>*Country</label>
+				<div id="infoHelp">
+					<label for="psw">*Password:
+						<a>&#9432;<br>
+							<span class="infoLabel">
+							Min. 1 uppercase, lowercase, number/special character
+							</span>
+						</a>
+					</label> 
+				</div>		
+				<input type="password" name="psw" 
+				pattern="^((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required>
+				
+				<br>
+				<label for="firstName">*First Name:</label>
+				<input type="text" name="firstName" id="firstName" size="40%" 
+				maxlength="20" placeholder="e.g. Adam" required autofocus>
+
+				<br>
+				<label for="lastName">*Last Name:</label>
+				<input type="text" name="lastName" id="lastName" size="40" 
+				maxlength="20" placeholder="e.g. Levine" required>
+
+				<br>
+				<label for="countries">*Country</label>
 				<select name="countries" id="countries" required>
 					<option value="">-Select a country-</option>
 					<option value="AF">Afghanistan</option>
@@ -312,48 +317,118 @@
 					<option value="ZW">Zimbabwe</option>
 				</select>
 				
-				<br><br>
-				<label>State: <input type="text" name="states" id="states" size="40" 
+				<br>
+				<label for="states">State:</label>
+				<input type="text" name="states" id="states" size="40" 
 				maxlength="20" placeholder="e.g. Melaka">
-				</label>
 				
-				<br><br>
-				<label>Comments: 
-				<br><textarea name="comments" id="comments" rows="5" cols="40">
+				<br>
+				<label for="comments">Comments:</label>
+				<textarea name="comments" id="comments" rows="5" cols="40">
 				</textarea>
-				</label>
 				
-				<!-- Cannot 1. display words inline 2. label style (white color)-->
-				<input type="checkbox" name="subscribe" id="subscribe" value = "subscribe">Latest fashion news
-
+				<br>
+				<span id="white">
+					<input type="checkbox" name="subscribe" id="subscribe" 
+					value = "subscribe" checked> Subscribe to the latest fashion news
+				</span>
+				
 				<br><br>
+				<input type="submit" value="Submit" id="mySubmit" name="mySubmit"> &nbsp;&nbsp; 
+				<input type="reset" id="myReset" name="myReset">
 				
-				<!-- Cannot display buttons inline/side-by-side -->
-				<input type="submit" value="Submit" id="mySubmit"> &nbsp;&nbsp; <input type = "reset">
-				<h5>See more fashion at our sister company &mdash; <a href="https://www.zalora.com.my" class="Zalora" style="font-family:brand">Zalora</a></h5>
+				<h5>See more fashion at our sister company &mdash; 
+					<a href="https://www.zalora.com.my" target="_blank" class="Zalora" style="font-family:brand">Zalora</a>
+				</h5>
 			</form>
 		</main>
 		<footer>
-		<nav style="font-family: navi">
-			<ul>
-				<li><a href="index.html">Home page</a></li><span class="navDiv">|</span>
-				<li><a href="second.html">Second page</a></li><span class="navDiv">|</span>
-				<li><a href="third.html">Services</a></li><span class="navDiv">|</span>
-				<li><a href="fourth.html">Fourth page</a></li><span class="navDiv">|</span>
-				<li><a href="fifth.html">Fifth page</a></li><span class="navDiv">|</span>
-				<li><a href="contact.html">Contact Us</a></li> 
-			</ul>
-		</nav>
-		<span id="copyright">&copy; 2017 Fashionista</span>
-		<br>
-		Contact: <a id="emailLink" href="mailto:fashionista@gmail.com">fashionista@gmail.com</a><br>
-		<span id="desktop">010-987-5432</span><a id="mobile" href="tel:010-987-5432">010-987-5432</a>
-		<p>Last updated on:
-			<script>
-				document.write(document.lastModified);
-			</script>
-		</p>
-	</footer>
+			<div class="footLeft">
+				<table>
+					<tr>
+						<th>Associated Companies</th>
+						<th>Sister Company</th>
+					</tr>
+					<tr>
+						<td><a href="index.html">Nike</a></td>
+						<td><a href="https://www.zalora.com.my" target="_blank">Zalora</td>
+					</tr>
+					<tr>
+						<td><a href="index.html">Mango</a></td>
+					</tr>
+					<tr>
+						<td><a href="index.html">3</a></td>
+					</tr>
+					<tr>
+						<td><a href="index.html">4</a></td>
+					</tr>
+				</table>
+				
+				<br>
+				Contact: <a id="emailLink" href="mailto:fashionista@gmail.com">fashionista@gmail.com</a>
+				<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<span id="desktop">010-987-5432</span><a id="mobile" href="tel:010-987-5432">010-987-5432</a>
+			</div>
+			<div class="footRight">
+				<br>
+				<nav style="font-family:navi">
+					<ul>
+						<li><a href="index.html">Home page</a></li><span class="navDiv">|</span>
+						<li><a href="second.html">Second page</a></li><span class="navDiv">|</span>
+						<li><a href="third.html">Services</a></li><span class="navDiv">|</span>
+						<li><a href="fourth.html">Fourth page</a></li><span class="navDiv">|</span>
+						<li><a href="fifth.html">Fifth page</a></li><span class="navDiv">|</span>
+						<li><a href="contact.html">Contact Us</a></li> 
+					</ul>
+				</nav>
+				
+				<br><br>
+				<span id="copyright">&copy; 2017 Fashionista</span>
+				<br>
+				
+				<script>
+					function lastUpdate()
+					{
+					   this.length = lastUpdate.arguments.length;
+					   for (var i = 0; i > this.length; i++)
+					   {
+						 this[i + 1] = lastUpdate.arguments[i];
+					   }
+					}
+					var days = new lastUpdate();
+					 days[0] = "Sunday";
+					 days[1] = "Monday";
+					 days[2] = "Tuesday";
+					 days[3] = "Wednesday";
+					 days[4] = "Thursday";
+					 days[5] = "Friday";
+					 days[6] = "Saturday";
+					var months = new lastUpdate();
+					 months[0] = "January";
+					 months[1] = "February";
+					 months[2] = "March";
+					 months[3] = "April";
+					 months[4] = "May";
+					 months[5] = "June";
+					 months[6] = "July";
+					 months[7] = "August";
+					 months[8] = "September";
+					 months[9] = "October";
+					 months[10] = "November";
+					 months[11] = "December";
+					var combinedDate = new Date(document.lastModified);
+					 with (document)
+					 {
+					  write("Last updated on ");
+					  write(days[(combinedDate.getDay())], ", ");
+					  write(combinedDate.getDate(), " ");
+					  write(months[(combinedDate.getMonth())], " ");
+					  write(" ", combinedDate.getFullYear());
+					  }
+				</script>
+			</div>
+		</footer>
 	</div>
 </body>
 </html>
