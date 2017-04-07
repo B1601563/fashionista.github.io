@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
 	<title>Fashionista</title>
-	<link rel="icon" type = "image/x-icon" href="images/favicon.ico">
-	<link rel="stylesheet" href="fashionista.css">
+	<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="fashionista.css">
+	<link rel="stylesheet" type="text/css" href="index.css">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- edit here -->
@@ -15,6 +16,12 @@
 	<div id="wrapper">
 		<header>
 			<h1 class="floatLeft" style="font-family:brand">Fashionista</h1>
+			<div>
+				<a href="user.html"><img src="images/user.svg" alt="My Account" onmouseover="this.src='images/user.png';" 
+				onmouseout="this.src='images/user.svg';">
+					<span class="headerLinks" style="font-family:header">My Account</span>
+				</a>
+			</div>
 		</header>
 		<nav>
 			<div style="font-family:navi">
@@ -104,12 +111,40 @@
 			<div style="font-family:tagline">
 				<h3>Immerse yourself in the fashion lifestyle.</h3>
 			</div>
+			<section>
+				<h4>Fashionista is your ultimate guide to a wonderful trendy transformation!<h4>
+			</section>
 		</main>
 		<footer>
-			<div>
+			<div class="footLeft">
+				<table>
+					<tr>
+						<th>Associated Companies</th>
+						<th>Sister Company</th>
+					</tr>
+					<tr>
+						<td><a href="index.html">Nike</a></td>
+						<td><a href="https://www.zalora.com.my" target="_blank">Zalora</td>
+					</tr>
+					<tr>
+						<td><a href="index.html">Mango</a></td>
+					</tr>
+					<tr>
+						<td><a href="index.html">3</a></td>
+					</tr>
+					<tr>
+						<td><a href="index.html">4</a></td>
+					</tr>
+				</table>
 				
-				Contact: <a id="emailLink" href="mailto:fashionista@gmail.com">fashionista@gmail.com</a><br>
+				<br>
+				Contact: <a id="emailLink" href="mailto:fashionista@gmail.com">fashionista@gmail.com</a>
+				<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 				<span id="desktop">010-987-5432</span><a id="mobile" href="tel:010-987-5432">010-987-5432</a>
+			</div>
+			<div class="footRight">
+				<br>
 				<nav style="font-family:navi">
 					<ul>
 						<li><a href="index.html">Home page</a></li><span class="navDiv">|</span>
@@ -120,14 +155,51 @@
 						<li><a href="contact.html">Contact Us</a></li> 
 					</ul>
 				</nav>
-				<br><br><br>
+				
+				<br><br>
 				<span id="copyright">&copy; 2017 Fashionista</span>
 				<br>
-				<p>Last updated
-					<script>
-						document.write(document.lastModified);
-					</script>
-				</p>
+				
+				<script>
+					function lastUpdate()
+					{
+					   this.length = lastUpdate.arguments.length;
+					   for (var i = 0; i > this.length; i++)
+					   {
+						 this[i + 1] = lastUpdate.arguments[i];
+					   }
+					}
+					var days = new lastUpdate();
+					 days[0] = "Sunday";
+					 days[1] = "Monday";
+					 days[2] = "Tuesday";
+					 days[3] = "Wednesday";
+					 days[4] = "Thursday";
+					 days[5] = "Friday";
+					 days[6] = "Saturday";
+					var months = new lastUpdate();
+					 months[0] = "January";
+					 months[1] = "February";
+					 months[2] = "March";
+					 months[3] = "April";
+					 months[4] = "May";
+					 months[5] = "June";
+					 months[6] = "July";
+					 months[7] = "August";
+					 months[8] = "September";
+					 months[9] = "October";
+					 months[10] = "November";
+					 months[11] = "December";
+					var combinedDate = new Date(document.lastModified);
+					 with (document)
+					 {
+					  write("Last updated on ");
+					  write(days[(combinedDate.getDay())], ", ");
+					  write(combinedDate.getDate(), " ");
+					  write(months[(combinedDate.getMonth())], " ");
+					  write(" ", combinedDate.getFullYear());
+					  }
+				</script>
 			</div>
 		</footer>
 	</div>
