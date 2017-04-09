@@ -16,42 +16,30 @@ label { width: 100px;
 	
 input, textarea, select { margin-top: 0.1%; margin-left: 20%; 
 		margin-right: 20%; display: block; } 
-				
+	
 .infoLabel { color: pink; }
 		
 #infoHelp span { opacity: 0;
 				 transition: opacity 1s ease-in-out; 
 				 position: relative;
-				 left: 20%;}
-						 
+				 left: 20%; } 
+#infoHelp a { text-decoration: none; }						 
 #infoHelp a:hover span { display: inline;
 						 position: relative;
 						 left: 20%;
 						 text-align: center;
 						 opacity: 1; } 		
 						 						
-#myReset
-{ 
-	display: inline-block;
-	margin: 0;
-	padding: 0;
-}
-#mySubmit
-{ 
-	display: inline-block;
-	margin: 0 0 0 20%;
-	padding: 0;
-}
-#subscribe 
-{ 
-	display: inline-block;
-	margin: 0 0 0 20%;
-	padding: 0;
-}	
-#white
-{
-	color: white;
-} 
+#myReset { display: inline-block;
+		   margin: 0;
+		   padding: 0; }
+		   
+#rememberMe, #mySubmit, #subscribe { display: inline-block;
+									 margin: 0 0 0 20%;
+									 padding: 0; }
+									 
+.white { color: white; } 									 
+
  
 .Zalora { font-size: 24pt; }	
 
