@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Contact | Fashionista</title>
+	<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="fashionista.css">
+	<link rel="stylesheet" type="text/css" href="contact.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- edit here -->
+	<meta name="description=" content="">
+	<meta name="author" content="">
+	<meta name="keyword" content="">
+</head>
+<body>
+	<div id="wrapper">
+		<header>
+			<h1 class="floatLeft" style="font-family:brand">
+				<a href="index.html" id="fashionista">Fashionista</a>
+			</h1>
+			
+			<h3>30 DAYS FREE RETURN | FREE DELIVERY ABOVE RM50
+				<br>
+				CALL <span class="desktop">010-987-5432</span>
+					<a class="mobile" href="tel:010-987-5432">010-987-5432</a>
+				| EMAIL <a id="emailLink" href="mailto:fashionista@gmail.com">fashionista@gmail.com</a>
+			</h3>
+
+			<div>
+				<a href="user.html"><img src="images/user.jpg" alt="My Account" onmouseover="this.src='images/userHover.jpg';" 
+				onmouseout="this.src='images/user.jpg';"></a>
+				<br>
+				<div id="myBagInfo">
+					<a href="#"><img src="images/bag.jpg" alt="My Bag" onmouseover="this.src='images/bagHover.jpg';" 
+					onmouseout="this.src='images/bag.jpg';"><br>
+						<span>
+							Add items to your personal collection!
+						</span>
+					</a>
+				</div>
+			</div>		
+		</header>
+		<nav>
+			<div style="font-family:navi">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="brands.html">Brands</a></li>
+					<li><a href="blog.html">Blog</a></li>
+					<li><a href="contact.html">Contact Us</a></li> 
+				</ul>
+			</div>
+		</nav>
+
+		
+		<main>
+			<h1>Contact Us</h1>
+			<p>Didn't find what you were looking for on our website? You can send us your questions instead and we'll be sure to reach out to you soon!
+				Our friendly customer service is open daily from 9am to 6pm and we aim to respond to all queries within 24 hours! If you don't receive a reply from us within this time frame, please check your spam folders.
+				Please only send your queries once or it may be marked as spam by our mail servers.</p>
+			<br><br>
+			
+
+			<div>
+				<fieldset>
+					<legend>Information</legend>
+					<label>* Required fields</label>
+					<br><br>
+					<label for="firstName">First Name:</label><br>
+					<input type="text" name="firstName" id="firstName" size="25" 
+					maxlength="20" placeholder="first name">
+
+					<br><br>
+					<label for="lastName">Last Name:</label><br>
+					<input type="text" name="lastName" id="lastName" size="25" 
+					maxlength="20" placeholder="last name">
+					
+					<br><br>
+					<label for="email">*Email:</label><br>
+					<input type="email" name="email" id="email" size="30" 
+					maxlength="30" placeholder="e.g. your_email@example.com" required>
+
+					<br><br>
+					<label for="orderNum">Order Number (if any):</label><br>
+					<input type="text" id="orderNum" name="orderNum" placeholder="2xxxx" size="30">
+					
+					<br><br>
+					<label for="inquiry">*Inquiry:</label><br>
+					<input type="text" id="inquiry" name="inquiry" placeholder="What's your concern?" size="47" required>
+					
+					<br><br>
+					<label for="comments">Comments:</label><br>
+					<textarea name="comments" id="comments" rows="4" cols="40"></textarea>
+					<br><br>
+					<input class="mySubmit" type="submit" value="Contact Us">
+				</fieldset>
+			</div>
+			<br><br><br>
+		</main>
+	
+	
+	
+	
+	
+		<footer>
+			<div class="footLeft">
+				<table>
+					<tr>
+						<th>Associated Companies</th>
+						<th>Sister Company</th>
+					</tr>
+					<tr>
+						<td><a href="index.html" target="_blank">Armani Exchange</a></td>
+						<td><a href="https://www.zalora.com.my" target="_blank">Zalora</a></td>
+					</tr>
+					<tr>
+						<td><a href="index.html" target="_blank">Dorothy Perkins</a></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td><a href="index.html" target="_blank">Mango</a></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td><a href="index.html" target="_blank">Nike</a></td>
+						<td></td>
+					</tr>
+				</table>
+				
+			</div>
+			<div class="footRight">
+				<br>
+				<nav style="font-family:navi">
+					<ul>
+						<li><a href="index.html">Home</a>|</li>
+						<li><a href="brands.html">Brands</a>|</li>
+						<li><a href="blog.html">Blog</a>|</li>
+						<li><a href="contact.html">Contact Us</a></li> 
+					</ul>
+				</nav>
+			
+				<a href="https://www.facebook.com" class="fa fa-facebook"></a>
+				<a href="https://www.twitter.com" class="fa fa-twitter"></a>
+				<a href="https://www.instagram.com" class="fa fa-instagram"></a>
+				
+				<br><br>
+				<span id="copyright">&copy; 2017 Fashionista</span>
+				
+				<br><br>
+				<script>
+					function lastUpdate()
+					{
+					   this.length = lastUpdate.arguments.length;
+					   for (var i = 0; i > this.length; i++)
+					   {
+						 this[i + 1] = lastUpdate.arguments[i];
+					   }
+					}
+					var days = new lastUpdate();
+					 days[0] = "Sunday";
+					 days[1] = "Monday";
+					 days[2] = "Tuesday";
+					 days[3] = "Wednesday";
+					 days[4] = "Thursday";
+					 days[5] = "Friday";
+					 days[6] = "Saturday";
+					var months = new lastUpdate();
+					 months[0] = "January";
+					 months[1] = "February";
+					 months[2] = "March";
+					 months[3] = "April";
+					 months[4] = "May";
+					 months[5] = "June";
+					 months[6] = "July";
+					 months[7] = "August";
+					 months[8] = "September";
+					 months[9] = "October";
+					 months[10] = "November";
+					 months[11] = "December";
+					var combinedDate = new Date(document.lastModified);
+					 with (document)
+					 {
+					  write("Last updated on ");
+					  write(days[(combinedDate.getDay())], ", ");
+					  write(combinedDate.getDate(), " ");
+					  write(months[(combinedDate.getMonth())], " ");
+					  write(" ", combinedDate.getFullYear());
+					  }
+				</script>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>
