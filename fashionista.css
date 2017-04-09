@@ -134,7 +134,7 @@ td a:hover { text-decoration: underline; }
 				background: linear-gradient(to bottom left, #8a3ab9, #fccc63);
 			    color: white; }		  
 #copyright { font-style: italic; }
-#emailLink { color: #1a4dce; }
+.emailLink { color: #1a4dce; }
 .mobile { display: none; }
 .desktop { display: inline; }
 

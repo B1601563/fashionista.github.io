@@ -34,9 +34,9 @@ input, textarea, select { margin-top: 0.1%; margin-left: 20%;
 		   margin: 0;
 		   padding: 0; }
 		   
-#rememberMe, #mySubmit, #subscribe { display: inline-block;
-									 margin: 0 0 0 20%;
-									 padding: 0; }
+#rememberMe, #mySubmit, #mySubmit2, #subscribe { display: inline-block;
+												 margin: 0 0 0 20%;
+												 padding: 0; }
 									 
 .white { color: white; } 									 
 
