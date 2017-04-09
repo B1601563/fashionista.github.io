@@ -51,11 +51,14 @@ article p { text-align: justify; }
 	hr { border: 0; }
 			
 	.mobile { display: block; }
+	.tablet { display: block; }
 	.desktop { display: none; }
+	
 }
 
 @media only screen and (max-width:768px){
 	.mobile { display: block; }
+	.tablet { display: none; }
 	.desktop { display: none; }
 
 }

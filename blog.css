@@ -1,8 +1,21 @@
 hr { border-color: black; 
 	 width: 80%; }
 	 
-#blogLink { background-color: black; 
-			color: white; 
-			border-radius: 5px; 
-			margin-left: 3%; }
+a.link { color: #1a4dce; 
+		 border-radius: 5px; }
 			
+#mobile { display: none; }
+			
+@media only screen and (max-width:1024px){
+	iframe { size: 100%; }
+	
+}
+
+@media only screen and (max-width:768px){
+	iframe { width: 100%; }
+	hr { border: 0; }
+	
+	#mobile { display: block; }
+	#desktop { display: none; }
+
+}

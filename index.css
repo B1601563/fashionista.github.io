@@ -1,3 +1,4 @@
+#goToUserPage { color: #1a4dce; }
 /* Slideshow container */
 .slideshowContainer { max-width: 1000px;
 					  max-height: 1000px;
@@ -79,6 +80,3 @@ img { max-width: 100%;
 	div .slideshowContainer, span .dot { display: none; }
 	.dot { display: none; }
 }
-
-/*#winter {	float:center;
-			margin-left:350px; }*/

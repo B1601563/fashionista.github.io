@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<title>Fashionista Test</title>
+	<link rel = "icon" type = "image/x-icon" href = "favicon.ico">
+	<link rel = "stylesheet" href = "fashionista.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
+	<link href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet"> 
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+	
+	<meta charset = "utf-8">
+	
+	<style>
+		header div { flex: 1; 
+			 height: 60%; 
+			 text-align: center; } 			 
+		header img { width: 15%; 
+					 height: 45%; }
+		header a { text-decoration: none; }
+		header span { color: black; 
+					  font-size: 170%; } 
+		header span:hover { background-color: black; 
+							color: white; 
+							border-radius: 3px; }
+		h5 { margin-left: 20%;
+			 color: pink; }	
+	</style>
+</head>
+<body>
+	<div id = "wrapper">
+	<header>
+			<h1 class="floatLeft" style="font-family:brand">Fashionista</h1>
+			<div>
+				<a href="user.html"><img src="images/user.svg" alt="My Account" onmouseover="this.src='images/user.png';" 
+				onmouseout="this.src='images/user.svg';">
+					<span class="headerLinks" style="font-family:header">My Account</span>
+				</a>
+			</div>
+		</header>
+	<nav>
+	<div style = "font-family: navi">
+		<ul>
+			<li><a href = "home.html">Home page</a></li>
+			<li><a href = "second.html">Second page</a></li>
+			<li><a href = "third.html">Services</a></li>
+			<li><a href = "fourth.html">Fourth page</a></li>
+			<li><a href = "fifth.html">Fifth page</a></li>
+			<li><a href = "contact.html">Contact Us</a></li> 
+		</ul>
+	</div>
+	</nav>
+	<main>
+		<div style = "font-family: tagline">
+			<h2>Explore.</h2>
+		</div>
+		
+		<div class="fotorama">
+		  <img src="http://s.fotorama.io/1.jpg">
+		  <img src="http://s.fotorama.io/2.jpg">
+		</div>
+
+		<div style = "font-family: tagline">
+		<h2>Immerse yourself in the fashion lifestyle.</h2>
+		</div>
+		
+		<h5>See more fashion at our sister company &mdash; 
+			<a href="https://www.zalora.com.my" target="_blank" class="Zalora" style="font-family:brand">Zalora</a>
+		</h5>
+	</main>
+	<footer>
+		<nav style = "font-family: navi">
+			<ul>
+				<li><a href = "home.html">Home page</a></li><span class = "navDiv">|</span>
+				<li><a href = "second.html">Second page</a></li><span class = "navDiv">|</span>
+				<li><a href = "third.html">Services</a></li><span class = "navDiv">|</span>
+				<li><a href = "fourth.html">Fourth page</a></li><span class = "navDiv">|</span>
+				<li><a href = "fifth.html">Fifth page</a></li><span class = "navDiv">|</span>
+				<li><a href = "contact.html">Contact Us</a></li> 
+			</ul>
+		</nav>
+		<span id = "copyright">&copy; 2017 Fashionista</span>
+		<br>
+		Contact: <a id = "emailLink" href = "mailto:fashionista@gmail.com">fashionista@gmail.com</a><br>
+		<span id = "desktop">010-987-5432</span><a id = "mobile" href = "tel:010-987-5432">010-987-5432</a><br>
+		
+		<!-- Code snippet below -->
+		<span id="desktop">010-987-5432</span><a id="mobile" href="tel:010-987-5432">010-987-5432</a>
+		<br>
+		<a id="emailLink" href="mailto:fashionista@gmail.com">fashionista@gmail.com</a>
+		<!-- Code snippet above -->
+		
+		<script>
+			function Agg()
+			{
+			   this.length = Agg.arguments.length;
+			   for (var i=0; i>this.length; i++)
+			   {
+				 this[i + 1] = Agg.arguments[i];
+			   }
+			}
+			var gg = new Agg();
+			 gg[0] = "Sunday";
+			 gg[1] = "Monday";
+			 gg[2] = "Tuesday";
+			 gg[3] = "Wednesday";
+			 gg[4] = "Thursday";
+			 gg[5] = "Friday";
+			 gg[6] = "Saturday";
+			var mm = new Agg();
+			 mm[0] = "January";
+			 mm[1] = "February";
+			 mm[2] = "March";
+			 mm[3] = "April";
+			 mm[4] = "May";
+			 mm[5] = "June";
+			 mm[6] = "July";
+			 mm[7] = "August";
+			 mm[8] = "September";
+			 mm[9] = "October";
+			 mm[10] = "November";
+			 mm[11] = "December";
+			var dd = new Date(document.lastModified);
+			 with (document)
+			 {
+			  write("Last updated on ");
+			  write(gg[(dd.getDay())], ", ");
+			  write(dd.getDate(), " ");
+			  write(mm[(dd.getMonth())], " ");
+			  write(" ", dd.getFullYear());
+			  }
+
+		</script>
+	</footer>
+	</div>
+</body>
+</html>
+
+<!--<button class = "leftButton" onclick = "plusDivs(-1)">&#10094;</button>-->
+<!--<button class = "rightButton" onclick = "plusDivs(1)">&#10095;</button>-->
+<!--<img src = "winterFashion.jpg" id = "winter" alt = "Winter Clothes" width = "400" height = "200">-->
